@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>The Parallax Engine</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://kit.fontawesome.com/67cb34d4f6.js" crossorigin="anonymous"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://use.typekit.net/tzp3rab.css">
+    <link rel="icon" type="image/x-icon" href="images/favicon/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Pacifico&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <!-- Navbar Section -->
+    <nav class="navbar">
+        <div class="navbar__container">
+          <a href="/" id="navbar__logo"><picture><img src="images/parallax_enigne.png" class="logo"></picture><p class="Parallax_text" id="nav_bar_parallax">The Parallax Engine</p></a>
+          <div class="navbar__toggle" id="mobile-menu">
+            <span class="bar"></span> <span class="bar"></span>
+            <span class="bar"></span>
+
+          </div>
+          <ul class="navbar__menu">
+            <li class="navbar__item">
+              <a href="#home" class="navbar__links">Home</a>
+            </li>
+            <li class="navbar__item">
+              <a href="#about" class="navbar__links">About</a>
+            </li>
+            <li class="navbar__item">
+              <a href="#testimonials" class="navbar__links">Testimonials</a>
+            </li>
+            <li class="navbar__btn"><a href="#sign_up" class="button">Sign Up</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <!-- Home Screen -->
+      <div class="home" id="home">
+        <picture class="home">
+
+            <img src="https://cosmosmagazine.com/wp-content/uploads/2022/06/GettyImages-1327951231.jpg?x96613" class="home_image">
+        </picture>
+        
+        <h1 class="Parallax_text" id="home_title">The Parallax Engine</h1>
+        <p class="tagline">Investing Risk Free</p>
+      </div>
+      
+      <!-- About Section -->
+      <div class="about" id="about">
+
+        
+        <picture> <img src="images/parallax_logo_illustration.png"></picture>
+        <h1 class="animate_text">About Our Start-Up</h1>
+        
+        <h3>The Parallax Engine is in the business of quantitative stock analysis. Our Organization uses Artificial Intelligence and Data Science techniques to build an optimal stock portfolio for our clients. Our company has successively programmed a fully-functional artificial intelligence based metholodolgy that performs complex financial and technical analysis of every single stock in a clients profile. It looks at financial performance, industry dynamics, global macro-economic factors as well stock market performance of each company, and then advises the user on how to build an optimal portfolio that meets their financial goals faster, with almost zero risk. </h3>
+      </div>
+
+      <!-- Testimonials -->
+      <div class="testimonials" id="testimonials">
+        <h1>Testimonials</h1>
+        <p class="testimonial">"This made my life so much easier. Since day I signed up, it has constantly improved my portfolio. I no longer have to stress about doing proper research, the artificial intelligence has never been wrong."<br> <em class="testimonial"><strong class="testimonial">Mathilda Margot</strong></em></p>
+        <p class="testimonial">"I have never invested in my life, and I was very skeptical about the risk. However, using Parallax Engine, has made my life stress-free. I make money easily, and the AI tells me which stocks to invest in and which to sell" <br> <em class="testimonial"><strong class="testimonial">Ram Bharadwaj</strong></em> </p>
+        <p class="testimonial">"Everybody wants to make money but nobody wants to take on the risk of losing it, and until now this was impossible. But using this engine, I have realised that investment doesn't have to involve risk, atleast if you use the Prallax engine"<br> <em class="testimonial"><strong class="testimonial">Kim Lee Wong</strong></em></p>
+      
+      </div>
+
+      <div class="sign_up" id="sign_up">
+        <h1>Sign Up</h1>
+      <form action="thankyou.html" method="get">
+        <!-- the br tag is useed for essentially breaking a line at the point at which it is inserted -->
+        <label for="firstName" class="userinput">First Name: </label><br>
+        <input class="userinput" id="firstName" type="text" required><br>
+        <label for="lasttName" class="userinput">Last Name: </label><br>
+        <input class="userinput" id="lastName" type="text" required><br>
+        <label for="email" class="userinput">Email: </label><br>
+        <input class="userinput" id="email" type="email" required><br>
+        <input type="submit" id="submit" name="submit" value="Sign me up!"> </form>
+      </div>
+    </body>
+    <script src="app.js"></script>
+</html>

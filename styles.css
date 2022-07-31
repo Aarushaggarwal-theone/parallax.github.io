@@ -1,0 +1,366 @@
+/* CSS HEX */
+:root {
+  --xiketic: #14080eff;
+  --warm-black: #0e4749ff;
+  --eton-blue: #85bda6ff;
+  --sage: #c2bfa3ff;
+  --lavender-blush: #f8e5eeff;
+}
+
+/* CSS HSL */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Kumbh Sans', sans-serif;
+}
+
+.navbar {
+  background: black;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+.Parallax_text {
+  font-family: "Ethnocentric";
+}
+.navbar__container {
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+  z-index: 1;
+  width: 100%;
+  max-width: 1300px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 50px;
+  padding-left: 50px;
+  
+}
+
+#navbar__logo {
+  background-color: var(--warm-black);
+  background-image: linear-gradient(to bottom, var(--eton-blue) 0%, var(--warm-black) 100%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 2rem;
+}
+
+@media screen and (max-width: 690px) {
+  #nav_bar_parallax {
+    font-size: 75%;
+  }
+  .logo {
+    display: none;
+  }
+}
+.logo {
+  padding-right: 10px;
+  width: 100px;
+  height: 100px;
+
+}
+
+.navbar__menu {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  text-align: center;
+}
+
+.navbar__item {
+  height: 80px;
+}
+
+.navbar__links {
+  color: var(--lavender-blush);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  padding: 0 1rem;
+  height: 100%;
+}
+
+.navbar__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1rem;
+  width: 100%;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  padding: 10px 20px;
+  height: 100%;
+  width: 100%;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  background: var(--eton-blue);
+  color: #fff;
+}
+
+.button:hover {
+  background-color: var(--warm-black);
+  transition: all 0.5s ease;
+}
+
+.navbar__links:hover {
+  color: var(--warm-black);
+  transition: all 0.5s ease;
+}
+
+@media screen and (max-width: 1160px) {
+  .navbar__container {
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    padding: 0;
+  }
+
+  .navbar__menu {
+    display: grid;
+    grid-template-columns: auto;
+    margin: 0;
+    width: 100%;
+    position: absolute;
+    top: -1000px;
+    opacity: 1;
+    transition: all 0.5s ease;
+    height: 50vh;
+    z-index: -1;
+    background-color: #131313;
+  }
+
+  .navbar__menu.active {
+    background: #131313;
+    top: 100%;
+    opacity: 1;
+    transition: all 0.5s ease;
+    z-index: 99;
+    height: 50vh;
+    font-size: 1.6rem;
+  }
+
+  #navbar__logo {
+    padding-left: 25px;
+  }
+
+  .navbar__toggle .bar {
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    transition: all 0.5s ease-in-out;
+    background: #fff;
+  }
+
+  .navbar__item {
+    width: 100%;
+  }
+
+  .navbar__links {
+    text-align: center;
+    padding: 2rem;
+    width: 100%;
+    display: table;
+  }
+
+  .navbar__btn {
+    padding-bottom: 2rem;
+  }
+
+  .button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 80px;
+    margin: 0;
+  }
+
+  #mobile-menu {
+    position: absolute;
+    top: 20%;
+    right: 5%;
+    transform: translate(5%, 20%);
+  }
+
+  .navbar__toggle .bar {
+    display: block;
+    cursor: pointer;
+  }
+
+  #mobile-menu.is-active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  #mobile-menu.is-active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  #mobile-menu.is-active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+}
+
+/* Home section */
+#home {
+  z-index: -99;
+  display: inline;
+  width: 100%;
+  margin-bottom: 500px;
+}
+
+.home_image{
+  z-index: -999;
+  display: inline;
+  width: 100%;
+  height: 100%;
+  filter: brightness(60%);
+
+}
+
+.home h1 {
+  position: relative;
+  text-align: center;
+  margin: -35% auto 0;
+  font-size: 4rem;
+  color: white;
+  background-color: rgba(0, 0, 0, 60%);
+  width: 80%;
+
+}
+.tagline {
+  position: relative;
+  text-align: center;
+  margin: -0.5% auto 0;
+  font-size: 3rem;
+  color: white;
+  font-family: 'Ethnocentric';
+  background-color: rgba(0, 0, 0, 60%);
+  width: 80%
+}
+
+@media screen and (max-width: 890px) {
+  .home h1 {
+    font-size: 2.25rem;
+  }
+  .tagline {
+    font-size: 1.5rem;
+  }
+}
+
+/* About section */
+.about {
+  padding: 40px 20px 40px;
+  text-align: center;
+  margin-bottom: 200px;
+}
+.about h1 {
+  padding: 0px 10px 20px;
+  font-size: 2.5rem;
+  color: var(--warm-black)
+}
+
+
+.about img {
+  width: 20%;
+  height: 20%;
+  position: relative;
+  margin-top: 32%;
+  padding: 0 10px 10px;
+  filter: drop-shadow(5px 5px 5px black);
+}
+.about h3 {
+  text-align: center;
+  margin: auto;
+  padding: 20px;
+  width: 50%;
+  color: var(--xiketic);
+}
+
+@media screen and (max-width: 690px) {
+  .about h1 {
+    margin-top: 15%;
+  }
+}
+
+/* Testimonials Section */
+.testimonials {
+  padding: 200px 20px 200px;
+  text-align: center;
+  margin: 400px auto 0px;
+  background-color: var(--warm-black);
+}
+.testimonials h1 {
+  margin: 50px;
+  padding: 20px 20px 20px;
+  font-size: 3rem;
+  color: var(--sage)
+}
+
+.testimonial {
+  font-size: 2rem;
+  padding: 30px;
+  width: 70%;
+  margin: auto;
+  font-family: "Dancing Script";
+  color: var(--lavender-blush);
+}
+
+.testimonial strong {
+  color: var(--sage);
+}
+
+
+/* user input */
+.sign_up {
+  margin: 0 100px 200px;
+}
+.sign_up h1 {
+  margin: 50px;
+  padding: 20px 20px 20px;
+  font-size: 3rem;
+  color: var(--sage);
+  text-align: center;
+}
+.userinput {
+  font-size: 1.5em;
+  margin: 10px 35% 10px;
+  padding: 10px;
+  width: 30%;
+  font-family: "Kumbh Sans";
+}
+
+#submit {
+  background-color: var(--warm-black);
+  width: 150px;
+  height: 80px;
+  font-size: 1.2em;
+  border-radius: 25px;
+  font-family: montserrat;
+  margin: 10px 45% 10px;
+  padding: 10px;
+  font-family: "Kumbh Sans";
+  color: white;
+}
